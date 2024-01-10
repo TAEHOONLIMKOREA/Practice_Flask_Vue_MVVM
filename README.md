@@ -46,8 +46,7 @@ Visual Studio Code<br/>
 ```
 vue create "프로젝트명" <br/>
 ```
-- 만약 새로운 pc에서 pull 하고 시작하면 Merge를 선택<br/>
-- ![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue_MVVM/assets/87262811/3f403520-25d2-4404-bd50-6a59de53aafe)
+- 만약 새로운 pc에서 pull 하면 추가로 플러그인만 설치하면되고 vue create를 사용할 필요 없음
 
 
 #### 개발 서버 실행
@@ -55,12 +54,12 @@ vue create "프로젝트명" <br/>
 npm run serve <br/>
 ```
 
-#### Project setup
+#### Project setup (npm을 사용하기전 해당 명령어로 업데이트하고 시작하자)
 ```
 npm install
 ```
 
-#### Compiles and minifies for production
+#### Compiles and minifies for production (통합연동 때 필요)
 ```
 npm run build
 ```
@@ -131,6 +130,7 @@ npm install vue-router --save
 ![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue_MVVM/assets/87262811/b0337965-f42c-433b-b4f7-3bff07683f6f)
 
 ### 2. Vue에서 fetch()로 데이터 요청
+![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue_MVVM/assets/87262811/3d6f4e0f-2662-462b-a110-5a9451ca8ad6)
 
 <hr/>
 
