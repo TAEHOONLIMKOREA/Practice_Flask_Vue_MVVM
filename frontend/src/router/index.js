@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import PingComponent from '../components/PingComponent.vue'
+import PingComponent from '../components/layout/PingComponent.vue'
 
 const routes = [
   {
