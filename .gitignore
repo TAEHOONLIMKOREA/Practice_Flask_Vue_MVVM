@@ -1,7 +1,6 @@
 .DS_Store
 node_modules
-/frontend/dist
-/backend/venv/
+backend/venv/
 vnev/
 
 
