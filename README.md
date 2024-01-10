@@ -1,4 +1,3 @@
-![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue/assets/87262811/bda548d3-36b4-4185-a400-808ce2fd7da3)
 # 프로젝트 구성
 - 먼저 프로젝트명으로 폴더를 만든 후 하위에 frontend와 backend 폴더 구성을 해주어야한다.<br/>
 - frontend 폴더는 vue/cli를 이용하여 프로젝트를 생성해 줄 때 만들면 됨 <br/>
@@ -16,7 +15,9 @@
 ### vscode에서 python 실행환경 구성
 #### 가상환경 설정
 - 터미널 창 실행 <br/>
-- python -m venv venv <br/>
+```
+python -m venv venv <br/>
+```
 #### 인터프리터 설정
 - [ Ctrl + Shift + P ] 키를 눌러 ">select Interpreter"를 검색해서 선택 <br/>
 ![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue/assets/87262811/e3dfa28f-9f1d-4016-9f08-4d36bd249900)
@@ -45,6 +46,10 @@ Visual Studio Code<br/>
 ```
 vue create "프로젝트명" <br/>
 ```
+- 만약 새로운 pc에서 pull 하고 시작하면 Merge를 선택<br/>
+- ![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue_MVVM/assets/87262811/3f403520-25d2-4404-bd50-6a59de53aafe)
+
+
 #### 개발 서버 실행
 ```
 npm run serve <br/>
@@ -64,6 +69,31 @@ npm run build
 ```
 npm run lint
 ```
+
+### 플러그인 설치
+- Bootstrap
+- Vue Router
+- Vuex (아직은 필요 없어보이고 프로그램이 커지면 필요.. 추후 상황보고 설치하도록 하자..)
+
+#### 1. Bootstrap 설치
+- Bootstrap 설치 방법에는 세 가지가 있음<br/>
+ 1. 소스파일을 다운로드하여 프로젝트에 추가<br/>
+ 2. 소스코드를 CDN에 추가<br/>
+ 3. NPM또는 Yarn을 이용한 설치<br/>
+ - 본 프로젝트에서는 세 번째 방법을 이용
+```
+npm install bootstrap --save
+```
+- 이후 main.js에 css임포트<br/>
+![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue_MVVM/assets/87262811/bf1e0871-7bc8-4b20-ab46-c8885f00f530)
+
+#### 2. Vue Router 설치
+```
+npm install vue-router --save
+```
+- 설치 후 Vue Router 설정<br/>
+![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue_MVVM/assets/87262811/924b0016-80f4-4096-9c2f-f1bac0615d9f)
+
 
 <hr/>
 
@@ -100,31 +130,16 @@ npm run lint
 ### 1. FLASK CORS 설정
 ![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue_MVVM/assets/87262811/b0337965-f42c-433b-b4f7-3bff07683f6f)
 
-
-### 2. 플러그인 설치
-- Bootstrap
-- Vue Router
-- Vuex (아직은 필요 없어보이고 프로그램이 커지면 필요.. 추후 상황보고 설치하도록 하자..)
-
-#### Bootstrap 설치
-- Bootstrap 설치 방법에는 세 가지가 있음<br/>
- 1. 소스파일을 다운로드하여 프로젝트에 추가<br/>
- 2. 소스코드를 CDN에 추가<br/>
- 3. NPM또는 Yarn을 이용한 설치<br/>
- - 본 프로젝트에서는 세 번째 방법을 이용
-```
-npm install bootstrap --save
-```
-- 이후 main.js에 css임포트
-![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue_MVVM/assets/87262811/bf1e0871-7bc8-4b20-ab46-c8885f00f530)
+### 2. Vue에서 fetch()로 데이터 요청
 
 <hr/>
 
-## 기타 추가 사항
-#### git
-- vue를 통해 프로젝트를 생성하면 .git 폴더와 .gitignore파일이 forntend폴더 안에 만들어진다. 
+## 기타 사항
+#### git 설정
+- vue를 통해 프로젝트를 생성하면 .git 폴더와 .gitignore파일이 forntend폴더 안에 만들어진다. <br/>
 - frontend폴더 안에 있는 .git폴더를 삭제하고 .gitignore파일을 상위 폴더(루트)로 옮긴다<br/>
 - gitignore 에 (venv/, frontend/dist/) 를 추가한다<br/>
+
 #### pip
 - freeze 를 이용하여 패키지 저장목록을 만들어 놓는다
 ```
@@ -133,13 +148,16 @@ pip freeze > requirements.txt
 - 설치할 때는 pip install -r requirements.txt 명령어를 이용하면 됨
 
 #### ESLint 패키지 필요시 추가 (설치시 코드 작성 잘해야함...)
-- npm install eslint eslint-plugin-vue --save-dev<br/>
+```
+npm install eslint eslint-plugin-vue --save-dev
+```
 - ESLint는 프론트엔드 코드 스타일을 관리 및 정적 프로그래밍 수행에 사용<br/>(개발 환경에서 코드 품질을 유지하고 향상시키기 위해 사용)<br/>
+
+
 
 <hr/>
 
 # 에러 해결
-
 #### Bootstrap Vue 에러(디자인 라이브러리)
 - Vue 프로젝트에 Bootstrap 적용을 위해 아래와 같이 BootstrapVue를 적용하고 실행하니 에러 발생 <br/>
 - https://bootstrap-vue.org/docs 홈페이지에서 다운로드 방법 확인<br/>
