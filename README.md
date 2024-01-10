@@ -74,10 +74,6 @@ npm run lint
 - 기존의 vue 사용법 바로 npm run serve 명령어를 이용해 개발 서버를 실행시키는 것이 아님
 - npm run build 명령어를 이용하여 vue형식의 파일을 html, js, css 파일로 변환 시켜서 flask에서 사용해야함
 
-#### ESLint 패키지 필요시 추가 (설치시 작명 잘해야함...)
-- npm install eslint eslint-plugin-vue --save-dev<br/>
-- ESLint는 코드 스타일을 관리 및 정적 프로그래밍 수행에 사용<br/>(개발 환경에서 코드 품질을 유지하고 향상시키기 위해 사용)<br/>
-
 
 ### Edit frontend/vue.config.js
 ![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue/assets/87262811/c8102962-cb6b-4dcc-996e-bbe6001d8726)
@@ -107,7 +103,7 @@ npm run lint
 ### 2. 플러그인 설치
 - Bootstrap
 - Vue Router
-- Vuex (일단 설치 말고 추후 필요시 설치하도록 하자..)
+- Vuex (아직은 필요 없어보이고 프로그램이 커지면 필요.. 추후 상황보고 설치하도록 하자..)
 
 #### Bootstrap 설치
 ```
@@ -129,6 +125,10 @@ pip freeze > requirements.txt
 ```
 - 설치할 때는 pip install -r requirements.txt 명령어를 이용하면 됨
 
+#### ESLint 패키지 필요시 추가 (설치시 코드 작성 잘해야함...)
+- npm install eslint eslint-plugin-vue --save-dev<br/>
+- ESLint는 프론트엔드 코드 스타일을 관리 및 정적 프로그래밍 수행에 사용<br/>(개발 환경에서 코드 품질을 유지하고 향상시키기 위해 사용)<br/>
+
 <hr/>
 
 # 에러 해결
@@ -147,10 +147,7 @@ yarn add vue bootstrap bootstrap-vue
 ```
 <br/>
 
-- 이후 main.js에 코드 추가
-![Alt text](image-1.png)
-
-- 에러 발생
+- main.js에 코드 추가 후 빌드 하면 에러 발생
 ![Alt text](image-2.png)
 
 #### 결론 :  bootstrapVue는 Vue3는 지원하지 않는다! (제길..)
@@ -160,3 +157,4 @@ yarn add vue bootstrap bootstrap-vue
 ```
 npm install bootstrap --save
 ```
+- 이후 자세한 부트스트랩 적용 방법은 위 프론트엔드 부분 참고
