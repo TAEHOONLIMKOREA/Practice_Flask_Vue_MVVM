@@ -104,25 +104,16 @@ npm run lint
 ### 1. FLASK CORS 설정
 ![Alt text](image.png)
 
-### 2. Vue 플러그인 설치
-- Bootstrap Vue
+### 2. 플러그인 설치
+- Bootstrap
 - Vue Router
 - Vuex (일단 설치 말고 추후 필요시 설치하도록 하자..)
 
-#### Bootstrap Vue 설치 (디자인 라이브러리)
-- https://bootstrap-vue.org/docs 참고<br/>
+#### Bootstrap 설치
+```
+npm install bootstrap --save
+```
 
-- With npm
-```
-npm install vue bootstrap bootstrap-vue
-```
--  With yarn
-```
-yarn add vue bootstrap bootstrap-vue
-```
-<br/>
-- 이후 main.js에 코드 추가
-![Alt text](image-1.png)
 
 <hr/>
 
@@ -137,3 +128,35 @@ yarn add vue bootstrap bootstrap-vue
 pip freeze > requirements.txt
 ```
 - 설치할 때는 pip install -r requirements.txt 명령어를 이용하면 됨
+
+<hr/>
+
+# 에러 해결
+
+#### Bootstrap Vue 에러(디자인 라이브러리)
+- Vue 프로젝트에 Bootstrap 적용을 위해 아래와 같이 BootstrapVue를 적용하고 실행하니 에러 발생 <br/>
+- https://bootstrap-vue.org/docs 홈페이지에서 다운로드 방법 확인<br/>
+
+- With npm
+```
+npm install vue bootstrap bootstrap-vue
+```
+-  With yarn
+```
+yarn add vue bootstrap bootstrap-vue
+```
+<br/>
+
+- 이후 main.js에 코드 추가
+![Alt text](image-1.png)
+
+- 에러 발생
+![Alt text](image-2.png)
+
+#### 결론 :  bootstrapVue는 Vue3는 지원하지 않는다! (제길..)
+#### 해결 방안 : public/index.html파일에 bootstrap CSS와 JS를 직접 임포트
+
+#### 꼭 bootstrap만 설치해야함 (bootstrap-vue X)
+```
+npm install bootstrap --save
+```
