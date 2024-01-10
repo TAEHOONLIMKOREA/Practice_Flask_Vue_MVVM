@@ -98,7 +98,8 @@ npm run lint
 - 이를 통해 AJAX, Jquery, fetch 등의 데이터 통신 요청을 허용하게 할수 있는데 본 프로젝트에서는 fetch()를 사용
 
 ### 1. FLASK CORS 설정
-![Alt text](image.png)
+![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue_MVVM/assets/87262811/b0337965-f42c-433b-b4f7-3bff07683f6f)
+
 
 ### 2. 플러그인 설치
 - Bootstrap
@@ -106,10 +107,16 @@ npm run lint
 - Vuex (아직은 필요 없어보이고 프로그램이 커지면 필요.. 추후 상황보고 설치하도록 하자..)
 
 #### Bootstrap 설치
+- Bootstrap 설치 방법에는 세 가지가 있음<br/>
+ 1. 소스파일을 다운로드하여 프로젝트에 추가<br/>
+ 2. 소스코드를 CDN에 추가<br/>
+ 3. NPM또는 Yarn을 이용한 설치<br/>
+ - 본 프로젝트에서는 세 번째 방법을 이용
 ```
 npm install bootstrap --save
 ```
-
+- 이후 main.js에 css임포트
+![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue_MVVM/assets/87262811/bf1e0871-7bc8-4b20-ab46-c8885f00f530)
 
 <hr/>
 
@@ -148,7 +155,8 @@ yarn add vue bootstrap bootstrap-vue
 <br/>
 
 - main.js에 코드 추가 후 빌드 하면 에러 발생
-![Alt text](image-2.png)
+![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue_MVVM/assets/87262811/3e405df7-b467-4c5d-b3eb-6ce3b9a90741)
+
 
 #### 결론 :  bootstrapVue는 Vue3는 지원하지 않는다! (제길..)
 #### 해결 방안 : public/index.html파일에 bootstrap CSS와 JS를 직접 임포트
