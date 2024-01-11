@@ -88,6 +88,13 @@ npm install bootstrap --save
 
 #### 2. Vue Router 설치
 ```
+vue add router
+```
+옵션은 전부 Y를 선택
+![image](https://github.com/TAEHOONLIMKOREA/Practice_Flask_Vue_MVVM/assets/87262811/8c0e0f7b-be45-40e2-a1ae-37419b99c41a)
+
+- 이후 최신버전으로 변경하기 위해 아래 명령어 실행
+```
 npm install vue-router --save
 ```
 - 설치 후 Vue Router 설정<br/>
